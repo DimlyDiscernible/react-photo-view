@@ -249,11 +249,11 @@ export default class PhotoView extends React.Component<IPhotoViewProps, typeof i
         }
       }
       // 横向边缘触发、背景触发禁用当前滑动
-      if (currentReachState === ReachTypeEnum.XReach || maskTouched) {
-        this.setState({
-          reachState: ReachTypeEnum.XReach,
-        });
-      } else {
+//       if (currentReachState === ReachTypeEnum.XReach || maskTouched) {
+//         this.setState({
+//           reachState: ReachTypeEnum.XReach,
+//         });
+//       } else {
         // 目标倍数
         const endScale = scale + ((touchLength - lastTouchLength) / 100 / 2) * scale;
         // 限制最大倍数和最小倍数
@@ -272,7 +272,7 @@ export default class PhotoView extends React.Component<IPhotoViewProps, typeof i
             toScale,
           }),
         });
-      }
+//       }
     }
   };
 
