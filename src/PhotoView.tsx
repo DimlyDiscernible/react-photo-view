@@ -483,7 +483,7 @@ export default class PhotoView extends React.Component<IPhotoViewProps, typeof i
             className={className}
             src={src}
             intro={intro}
-            width={width*scale}
+            width={width}
             height={height*scale}
             loaded={loaded}
             broken={broken}
